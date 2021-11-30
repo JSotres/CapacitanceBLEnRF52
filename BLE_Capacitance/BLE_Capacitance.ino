@@ -9,7 +9,7 @@ const int IN_PIN = A0;
 //Capacitance between IN_PIN and Ground
 //Stray capacitance is always present. Extra capacitance can be added to
 //allow higher capacitance to be measured.
-const float IN_STRAY_CAP_TO_GND = 9.3; //initially this was 30.00, then 24.48 (for seeeduino lite 26.40)
+const float IN_STRAY_CAP_TO_GND = 9.3; //provide here the stray capacitance, look in the repo README how to calculate it
 const float IN_EXTRA_CAP_TO_GND = 0.0;
 const float IN_CAP_TO_GND  = IN_STRAY_CAP_TO_GND + IN_EXTRA_CAP_TO_GND;
 const int MAX_ADC_VALUE = 1023;
