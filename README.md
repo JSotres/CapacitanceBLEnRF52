@@ -5,7 +5,6 @@ This repo also contains an Android App, developed with MIT App Inventor, for rea
 
 ## Implementation
 
-
 ### Capacitance Measurement
 
 My interest was in measuring small capacitances.
@@ -69,6 +68,31 @@ and uncomment:
 float capacitance = (float)val * IN_CAP_TO_GND / (float)(MAX_ADC_VALUE - val);
 ```
 
-if you upload now the code to the microcontroller, you will be able to read through the serial port the value of an unknow capacitor.
+If you upload now the code to the microcontroller, you will be able to read through the serial port the value of an unknow capacitor.
 
+### Reading data through LE Bluetooth
 
+To transmit the capacitance value via LE Bluetooth, upload to the microcontroller the code available in the file BLE_Capacitance.ino that you can find in the folder BLE_Capacitance.
+
+Do not forget firs to update the value of the stray capacitance in the corresponding code line (i.e., replace 9.3 by the value you found following the procedure detailed above):
+
+```
+const float IN_STRAY_CAP_TO_GND = 9.3; 
+```
+
+With this you are basically ready to go. Nevertheless, the repo also provide, within the folder AndroiddApp, an Android application developed with [MIT App Inventor](https://appinventor.mit.edu/)
+to monitor the transmitted signal. 
+
+#### Android application
+
+There are different ways to use this app with a smartphone with Android:
+
+##### MIT AI2 Companion application
+
+- In your smartphone, download (from Google Play) and install the MIT AI2 Companion application.
+- Then, in your computer web browser go to the MIT App Inventor (you will need to log in with a Google account).
+- Go to *Projects*, then to *Import project (.aia) from my computer ...* and import the file/project *radBLEnRF52.aia* that you will find within the AndroiddApp folder.
+- Go to *Connect* and then to *AI Companion*. You will get both a barcode and a code.
+- Open in you smartphone the MIT AI2 Companion application. Then, either scan the barcode or provide the code.
+
+##### Packed application
