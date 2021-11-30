@@ -91,8 +91,14 @@ There are different ways to use this app with a smartphone with Android:
 
 - In your smartphone, download (from Google Play) and install the MIT AI2 Companion application.
 - Then, in your computer web browser go to the MIT App Inventor (you will need to log in with a Google account).
-- Go to *Projects*, then to *Import project (.aia) from my computer ...* and import the file/project *radBLEnRF52.aia* that you will find within the AndroiddApp folder.
+- Go to *Projects*, then to *Import project (.aia) from my computer ...* and import the file/project *radBLEnRF52.aia* that you will find within the AndroidApp folder.
 - Go to *Connect* and then to *AI Companion*. You will get both a barcode and a code.
 - Open in you smartphone the MIT AI2 Companion application. Then, either scan the barcode or provide the code.
 
 ##### Packed application
+
+- Open this repo with your smartphone and then download and install the file radBLEnRF52.apk also available in the AndroidApp folder.
+
+###### App short guide
+
+
