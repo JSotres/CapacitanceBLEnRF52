@@ -1,7 +1,7 @@
 # Capacitance Meter with Bluetooth LE reading possibilities using an Adafruit Feather nRF52
 
-This is a project where I used an Adafruit Feather nRF52 to measure capacitances and to transmit the signal via Bluetooth Low Energy.
-This repo also contains an Android App developed with MIT App Inventor.
+Repo for a project with the goal of using an Adafruit Feather nRF52 to measure capacitances and to transmit the signal via Bluetooth Low Energy.
+This repo also contains an Android App, developed with MIT App Inventor, for reading the signal.
 
 ## Implementation
 
@@ -22,7 +22,6 @@ This approach requires estimating the stray capacitance. This can be done just b
 
 ### Scheme
 
-In this project I wanted to use an Adafruit Feather nRF52 as it would simplify Bluetooth Low Energy communication.
-The setup is analogous to that proposed in the original post for Arduino Uno:
+The setup is similar to that proposed in the original post for Arduino Uno, but using an Adafruit Feather nRF52:
 
 ![scheme](AdafruitFeathernRF52CapacitanceMeter_bb.png)
