@@ -46,7 +46,29 @@ and uncomment the line inmediately after:
 float capacitance = 4.7 * (1023.0-val)/(val*1.0);
 ```
 
-In this line, change 4.7 by the value of the capacitor you have used.
+In this line, change 4.7 by the value of the capacitor (in pF) you have used.
 
-Upload the code, and read the value provided by the serial port. For this you can use the Arduino IDE Serial Monitor. I have also worked on a [Python GUI](https://github.com/JSotres/serialReaderPython) 
+Upload the code, and read the value provided by the serial port. This will be the stray capacitance. For this you can use the Arduino IDE Serial Monitor. I have also worked on a [Python GUI](https://github.com/JSotres/serialReaderPython) 
 that you can use for the same purpose.
+
+Once you have found the stray capacitance, insert this value in the following line of the code (i.e., replace 9.3 by the value you found):
+
+```
+const float IN_STRAY_CAP_TO_GND = 9.3; 
+```
+
+Then, comment:
+
+```
+//float capacitance = 4.7 * (1023.0-val)/(val*1.0);
+```
+
+and uncomment:
+
+```
+float capacitance = (float)val * IN_CAP_TO_GND / (float)(MAX_ADC_VALUE - val);
+```
+
+if you upload now the code to the microcontroller, you will be able to read through the serial port the value of an unknow capacitor.
+
+
