@@ -105,3 +105,13 @@ When you open the app, you should see something like this:
 
 ![App](AppExplained.png)
 
+Make sure that Bluetooth is enabled in your device. Then:
+
+(i) Scan for available devices.
+
+(ii) Select the Adafruit Feather nRF52 from the list of available devices.
+
+(iii) Connect (or disconnect).
+
+(iv) When connected, the capacitance value should be sown in the screen.
+
