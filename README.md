@@ -101,4 +101,7 @@ There are different ways to use this app with a smartphone with Android:
 
 ###### App short guide
 
+When you open the app, you should see something like this:
+
+![App](AppExplained.tif)
 
