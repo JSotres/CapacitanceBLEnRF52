@@ -103,5 +103,5 @@ There are different ways to use this app with a smartphone with Android:
 
 When you open the app, you should see something like this:
 
-![App](AppExplained.tif)
+![App](AppExplained.png)
 
